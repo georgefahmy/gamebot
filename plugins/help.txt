@@ -1,0 +1,18 @@
+---- _Main Functions_ ----
+    * `gb results <@opponent> <wins> - <losses>` -- records the results against a single opponent
+    * `gb doubles <@partner> <wins> - <losses> <@opponent1> <@opponent2>``  -- records doubles game results
+
+------ _Leaderboard Functions_ ------
+    * `gb leaderboard` -- displays the leaderboard for your channel only
+    * `gb full leaderboard` -- displays the full leaderboard for all sites
+    * `gb doubles leaderboard` -- displays the doubles leaderboard for your channel only
+    * `gb doubles full leaderboard` -- displays the full doubles leaderboard for all sites
+
+------ _Opponent Functions_ ------
+    * `gb who next` -- randomly selects someone from your channel for you to play
+    * `gb predict <@opponent>` -- use elo ranking to predict outcome of game between you and opponent
+    * `gb predict <@player_1> <@player_2>` -- use elo ranking to predict outcome of games between two players
+    * `gb taunt <@player>` -- sends the player a nice gif and invites them to play a game
+
+--------- _Help_ ---------
+    * `gb help` - Displays this message."
