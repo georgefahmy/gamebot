@@ -199,11 +199,16 @@ def singles_results(message, opponent_id, wins, losses):
     message_response = ranking_response + player_a_mini_leaderboard + player_b_mini_leaderboard
 
     message.react("white_check_mark")
-    if wins == losses:
-        message.react(emoji_mapping[wins])
-    else:
-        message.react(emoji_mapping[wins])
-        message.react(emoji_mapping[losses])
+    if int(wins) > 9 or int(losses) > 9:
+        message.react("wow")
+
+    elif 0 <= int(wins) <= 9:
+        if wins == losses:
+            message.react(emoji_mapping[wins])
+        else:
+            message.react(emoji_mapping[wins])
+            message.react(emoji_mapping[losses])
+
     if int(wins) == 1 and int(losses) != 1:
         intro = "Recorded {} win and {} losses against <@{}>\n\n".format(
             wins, losses, player_b.user_id
